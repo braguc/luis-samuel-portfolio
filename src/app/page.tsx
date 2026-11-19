@@ -140,7 +140,7 @@ export default function Home() {
 
           <div className="absolute -bottom-5 -left-5 rounded-2xl bg-white px-5 py-4 shadow-lg">
             <p className="text-xs text-[#888888]">BASEADO EM</p>
-            <p className="mt-1 text-sm font-bold">São Paulo, Brasil</p>
+            <p className="mt-1 text-sm font-bold">São José dos Campos, São Paulo</p>
           </div>
         </div>
       </section>
