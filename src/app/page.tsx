@@ -40,6 +40,13 @@ export default function Home() {
   </a>
 
   <nav className="flex items-center gap-5 sm:gap-9">
+   
+   <a
+  href="#experiencia"
+  className="transition-colors hover:text-[#EA1D2C]"
+>
+  Experiência
+  </a>
     <a
       href="#projetos"
       className="text-xs font-medium tracking-wide transition-colors hover:text-[#EA1D2C] sm:text-sm"
@@ -437,10 +444,162 @@ export default function Home() {
 </ul>
 
   </div>
+
+</section>
+
+{/* Experience */}
+<section
+  id="experiencia"
+  className="mx-auto max-w-7xl px-6 py-24 md:px-12 md:py-32"
+>
+  <div className="grid gap-12 md:grid-cols-[1fr_1.5fr]">
+
+    {/* Section heading */}
+    <div>
+      <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#EA1D2C]">
+        03 — Experiência
+      </p>
+
+      <h2 className="mt-6 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
+        Experiências que conectam ideias e impacto.
+      </h2>
+
+      <p className="mt-6 max-w-sm text-base leading-relaxed text-[#777777]">
+        Participação em iniciativas que combinam tecnologia,
+        liderança, análise e empreendedorismo social.
+      </p>
+    </div>
+
+    {/* Experience entries */}
+    <div className="flex flex-col gap-10">
+
+      {/* iFood */}
+      <article className="border-b border-[#DDD8D2] pb-10">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#EA1D2C]">
+            Tecnologia & Inteligência Artificial
+          </p>
+
+          <span className="rounded-full bg-[#F5F2EF] px-3 py-1 text-xs text-[#666666]">
+            Imersão
+          </span>
+        </div>
+
+        <h3 className="mt-5 text-3xl font-semibold tracking-tight">
+          iFood
+        </h3>
+
+        <p className="mt-2 text-sm font-medium text-[#555555]">
+          Participante — Imersão em Inteligência Artificial
+        </p>
+
+        <p className="mt-5 text-sm leading-relaxed text-[#777777]">
+          Participação em uma experiência prática voltada ao
+          aprimoramento de um agente conversacional. Em equipe,
+          analisamos mais de 1.000 conversas com potenciais clientes,
+          identificando oportunidades de melhoria na qualidade
+          das respostas, na apresentação de produtos e na condução
+          das interações.
+        </p>
+
+        <p className="mt-4 text-sm leading-relaxed text-[#777777]">
+          A partir dessa análise, colaboramos no desenvolvimento
+          de um prompt de refinamento para tornar as respostas
+          do agente mais relevantes, objetivas e alinhadas à
+          experiência do cliente.
+        </p>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {[
+            "Inteligência Artificial Generativa",
+            "Engenharia de Prompts",
+            "Análise de Dados",
+            "Experiência do Cliente"
+          ].map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-[#DDD8D2] px-3 py-1.5 text-xs text-[#666666]"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </article>
+
+      {/* OBES */}
+      <article>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="text-xs font-semibold uppercase tracking-widest text-[#EA1D2C]">
+            Liderança & Empreendedorismo Social
+          </p>
+
+          <span className="rounded-full bg-[#F5F2EF] px-3 py-1 text-xs text-[#666666]">
+            Olimpíada nacional
+          </span>
+        </div>
+
+        <h3 className="mt-5 text-3xl font-semibold tracking-tight">
+          OBES
+        </h3>
+
+        <p className="mt-2 text-sm font-medium text-[#555555]">
+          Líder Estudantil e Integrante da Liderança Geral
+        </p>
+
+        <p className="mt-5 text-sm leading-relaxed text-[#777777]">
+          Atuei como estudante líder e um dos integrantes da
+          liderança geral responsáveis pela organização da
+          Olimpíada Brasileira de Empreendedorismo Social (OBES),
+          iniciativa que alcançou mais de 6.000 pessoas em
+          diferentes regiões do Brasil.
+        </p>
+
+        <p className="mt-4 text-sm leading-relaxed text-[#777777]">
+          A competição contou com o iFood como principal parceiro
+          institucional, apoiando a realização e o alcance da
+          iniciativa.
+        </p>
+
+        <div className="mt-6 grid grid-cols-2 gap-4 rounded-xl bg-[#F5F2EF] p-5">
+          <div>
+            <p className="text-2xl font-bold">6.000+</p>
+            <p className="mt-1 text-xs text-[#777777]">
+              Pessoas alcançadas
+            </p>
+          </div>
+
+          <div>
+            <p className="text-lg font-bold">iFood</p>
+            <p className="mt-1 text-xs text-[#777777]">
+              Principal parceiro
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-6 flex flex-wrap gap-2">
+          {[
+            "Liderança",
+            "Empreendedorismo Social",
+            "Organização de Eventos",
+            "Parcerias Estratégicas"
+          ].map((tag) => (
+            <span
+              key={tag}
+              className="rounded-full border border-[#DDD8D2] px-3 py-1.5 text-xs text-[#666666]"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
 
 {/* About */}
+
 <section
   id="sobre"
   className="mx-auto max-w-7xl px-6 py-24 md:px-12 md:py-32"
